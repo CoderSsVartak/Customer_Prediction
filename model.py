@@ -77,6 +77,15 @@ class model_preprocessing:
         
        
 
+"""
+Define the following variables:
+dataset_loc -> location of dataset in your system
+filename -> Name of the csv datafile
+column_names -> Name of the columns to be dropped, Enter empty list if nothing is to be dropped
+start -> start index of the column in dataset 
+end -> end index of the column in dataset
+op_col -> output index of the column in the dataset
+indexes -> indexes on which Label encoding is to be done.
 
 #Driver Code  
 preprocessor = model_preprocessing(dataset_loc, filename)  
@@ -84,10 +93,8 @@ preprocessor = model_preprocessing(dataset_loc, filename)
 features, output = preprocessor.read_dataset(start, end, op_col, column_names)
 features, encoder = preprocessor.label_categorical_data(features, indexes)
 features, scaler = preprocessor.scale_dataset(features)
-
-
 x_train, x_test, y_train, y_test = preprocessor.get_train_test_data(features, output, 0.3)        
-            
+"""            
             
             
             
